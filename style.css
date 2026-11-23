@@ -1,0 +1,191 @@
+/*
+  Plain academic portfolio
+  Typography: STIX Two Text / Times-like academic serif.
+  No decorative display fonts, animations, cards or gradients.
+*/
+:root {
+  --text: #202020;
+  --muted: #555;
+  --rule: #d8d8d8;
+  --link: #174b78;
+  --paper: #fff;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: "STIX Two Text", "Latin Modern Roman", "Computer Modern",
+               "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+/* Persistent header: remains visible while navigating and scrolling. */
+.site-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 70px;
+  padding: 0 max(6vw, calc((100vw - 1100px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: rgba(255, 255, 255, .98);
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.site-header nav a {
+  color: var(--text);
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header nav a:hover { text-decoration: underline; }
+
+main {
+  width: min(860px, 88%);
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.intro {
+  padding: 92px 0 55px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(42px, 6vw, 56px);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.position {
+  margin: 0 0 26px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.summary {
+  max-width: 760px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  margin-top: 25px;
+  font-size: 17px;
+}
+
+section:not(.intro) {
+  padding: 48px 0 42px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h2 {
+  margin: 0 0 22px;
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 28px 0 8px;
+  font-size: 23px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+section p { margin: 0 0 17px; }
+
+ul, ol {
+  padding-left: 28px;
+  margin-top: 12px;
+}
+
+li { padding-left: 4px; margin: 5px 0; }
+
+.publications li { margin-bottom: 20px; }
+
+.placeholder {
+  color: #666;
+  font-size: 16px;
+}
+
+footer {
+  width: min(860px, 88%);
+  margin: 0 auto;
+  padding: 20px 0 35px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    position: fixed;
+    min-height: 88px;
+    padding: 12px 6%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .site-name { font-size: 19px; }
+
+  .site-header nav {
+    width: 100%;
+    gap: 17px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .site-header nav a { font-size: 14px; }
+
+  main { padding-top: 88px; }
+  html { scroll-padding-top: 108px; }
+  .intro { padding-top: 65px; }
+  .position { font-size: 18px; }
+  .summary { font-size: 18px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 21px; }
+  body { font-size: 17px; }
+}
