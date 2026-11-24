@@ -203,11 +203,16 @@ footer {
   text-align: center;
 }
 
-.modified-gif {
-  width: 600px;
-  height: auto;
-  object-fit: cover;
-  object-position: 40% center;
+.image-crop {
+    width: 75%;
+    overflow: hidden;
+}
+
+.image-crop img {
+    width: 133.333%;
+    height: auto;
+    display: block;
+    transform: translateX(-33.333%);
 }
 
 .research-figure figcaption {
