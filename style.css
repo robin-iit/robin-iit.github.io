@@ -65,7 +65,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .site-logo {
-  height: 100px;
+  height: 64px;
   width: auto;
   object-fit: contain;
 }
