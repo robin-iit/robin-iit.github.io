@@ -213,18 +213,6 @@ footer {
 }
 
 
-.image-crop {
-    width: 75%;
-    overflow: hidden;
-}
-
-.image-crop img {
-    width: 133.333%;
-    height: auto;
-    display: block;
-    transform: translateX(-33.333%);
-}
-
 
 
 @media (max-width: 760px) {
