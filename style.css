@@ -203,6 +203,14 @@ footer {
   text-align: center;
 }
 
+.modified-gif {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  object-position: 40% center;
+}
+
 .research-figure figcaption {
     max-width: 600px;
     margin: 10px auto 0;
