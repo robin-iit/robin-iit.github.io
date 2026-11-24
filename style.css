@@ -68,6 +68,7 @@ a:hover { text-decoration-thickness: 2px; }
   height: 80px;
   width: auto;
   object-fit: contain;
+  padding: 10px;
 }
 
 .site-header nav {
