@@ -171,6 +171,7 @@ footer {
 
 .research-figure {
     margin: 25px 0;
+  text-align: center;
 }
 
 .research-gif {
@@ -179,6 +180,7 @@ footer {
   height: auto;
   display: block;
   margin: 20px auto;
+  text-align: center;
 }
 
 .research-figure figcaption {
