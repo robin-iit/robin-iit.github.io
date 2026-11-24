@@ -3,12 +3,22 @@
   Typography: STIX Two Text / Times-like academic serif.
   No decorative display fonts, animations, cards or gradients.
 */
+/*
 :root {
   --text: #202020;
   --muted: #555;
   --rule: #d8d8d8;
   --link: #174b78;
   --paper: #fff;
+}
+*/
+
+:root {
+  --text: #ffffff;
+  --muted: #cccccc;
+  --rule: #444444;
+  --link: #66b3ff;
+  --paper: #000000;
 }
 
 * { box-sizing: border-box; }
@@ -49,7 +59,8 @@ a:hover { text-decoration-thickness: 2px; }
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background: rgba(255, 255, 255, .98);
+  /* background: rgba(255, 255, 255, .98); */
+  background: rgba(0, 0, 0, .98);
   border-bottom: 1px solid var(--rule);
 }
 
@@ -76,6 +87,7 @@ a:hover { text-decoration-thickness: 2px; }
   align-items: center;
   gap: 26px;
 }
+
 
 .site-header nav a {
   color: var(--text);
@@ -156,7 +168,8 @@ li { padding-left: 4px; margin: 5px 0; }
 .publications li { margin-bottom: 20px; }
 
 .placeholder {
-  color: #666;
+  /* color: #666; */
+  color: var(--muted);
   font-size: 16px;
 }
 
