@@ -54,11 +54,20 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .site-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--text);
   font-size: 21px;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .site-header nav {
