@@ -219,10 +219,10 @@ footer {
 
 
 .image-crop-image {
-    width: 153.846%;
+    width: 181.81%;
     height: auto;
     display: block;
-    transform: translateX(-25%);
+    transform: translateX(-30%);
 }
 
 .image-crop-container {
