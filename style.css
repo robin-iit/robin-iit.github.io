@@ -217,20 +217,22 @@ footer {
 
 /* the cropped image classes, means the class and the container bith below */
 
-.image-crop-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    overflow: hidden;
-    clip-path: inset(0 10% 0 25%);
-}
 
 .image-crop-image {
     width: 153.846%;
     height: auto;
     display: block;
-    /* transform: translateX(-16.25%); */
+    transform: translateX(-25%);
 }
+
+.image-crop-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
 
 
 /* mobile view */
