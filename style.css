@@ -189,6 +189,8 @@ footer {
 }
 
 
+/* defining the image class and gif captions class*/
+
 .research-figure {
     margin: 25px 0;
   text-align: center;
@@ -227,7 +229,7 @@ footer {
     width: 153.846%;
     height: auto;
     display: block;
-    transform: translateX(-16.25%);
+    /* transform: translateX(-16.25%); */
 }
 
 
