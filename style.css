@@ -213,7 +213,7 @@ footer {
 }
 
 
-<!-- the cropped image classes, means the class and the container bith below -->
+/* the cropped image classes, means the class and the container bith below */
 
 .image-crop-container {
     width: 100%;
@@ -231,7 +231,7 @@ footer {
 }
 
 
-<!-- mobile view -->
+/* mobile view */
 
 @media (max-width: 760px) {
   .site-header {
