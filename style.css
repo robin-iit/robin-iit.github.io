@@ -216,17 +216,17 @@ footer {
 <!-- the cropped image classes, means the class and the container bith below -->
 
 .image-crop-container {
-    width: 75%;
+    width: 65%;
     max-width: 600px;
     overflow: hidden;
     margin: 20px auto;
 }
 
 .image-crop-image {
-    width: 133.333%;
+    width: 153.846%;
     height: auto;
     display: block;
-    transform: translateX(-33.333%);
+    transform: translateX(-38.462%);
 }
 
 
