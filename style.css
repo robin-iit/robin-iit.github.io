@@ -216,19 +216,22 @@ footer {
 <!-- the cropped image classes, means the class and the container bith below -->
 
 .image-crop-container {
-    width: 65%;
+    width: 100%;
     max-width: 600px;
-    overflow: hidden;
     margin: 20px auto;
+    overflow: hidden;
+    clip-path: inset(0 10% 0 25%);
 }
 
 .image-crop-image {
     width: 153.846%;
     height: auto;
     display: block;
-    transform: translateX(-38.462%);
+    transform: translateX(-16.25%);
 }
 
+
+<!-- mobile view -->
 
 @media (max-width: 760px) {
   .site-header {
